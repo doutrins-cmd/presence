@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main class="container">
+
+        <div class="view-counter">
+            <i class="fa-solid fa-eye"></i>
+            <span id="view-count-text">...</span>
+        </div>
+
+        <div class="discord-section">
+            <div class="discord-card">
+                <div class="discord-user-info-container">
+                    <div class="avatar-container">
+                        <img src="imagens/placeholder-avatar.png" alt="Avatar do Discord" class="discord-avatar"> 
+                        <span class="status-indicator online"></span>
+                    </div>
+                    <div class="discord-info">
+                        <div class="user-info">
+                            <span class="username">@Carregando...</span>
+                            <div class="user-emblems">
+                                <img src="https://discord.com/assets/26d24d55b46d15b272f3e4e9f906413a.svg" alt="Emblema Nitro" class="emblem nitro" style="display: none;">
+                                <img src="https://discord.com/assets/05a8d9a200f42967f08832a8849b380a.svg" alt="Emblema HypeSquad" class="emblem hypesquad" style="display: none;">
+                            </div>
+                            <span class="status"></span>
+                        </div>
+                        <div class="github-link">
+                            <i class="fa-brands fa-github github-icon"></i>
+                            <a href="https://github.com/doutrins-cmd" target="_blank" class="github-url">github.com/doutrins-cmd</a>
+                        </div>
+                    </div>
+                    <a href="https://discord.com/users/1006760238671745137" target="_blank" class="add-discord-btn">Add on Discord</a>
+                </div>
+
+                <div class="discord-rich-presence" id="presence-game" style="display: none;">
+                    <div class="activity-icon-container">
+                        <img class="activity-icon" src="" alt="Ícone da Atividade">
+                        <img class="activity-icon-small" src="" alt="Ícone Secundário da Atividade" style="display: none;">
+                    </div>
+                    <div class="activity-text-container">
+                        <span class="activity-name"></span>
+                        <span class="activity-details-line1"></span>
+                        <span class="activity-details-line2"></span>
+                        <span class="activity-elapsed-container" style="display: none;">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span class="activity-elapsed"></span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="discord-rich-presence" id="presence-music" style="display: none;">
+                    <div class="activity-icon-container">
+                        <img class="activity-icon" src="" alt="Ícone da Atividade Musical">
+                        <img class="activity-icon-small" src="" alt="Ícone Secundário da Atividade Musical" style="display: none;">
+                    </div>
+                    <div class="activity-text-container">
+                        <span class="activity-name"></span>
+                        <span class="activity-details-line1"></span>
+                        <span class="activity-details-line2"></span>
+                        <div class="music-progress-container" style="display: none;">
+                            <div class="music-progress-bar">
+                                <div class="music-progress-fill"></div>
+                            </div>
+                            <div class="music-timestamps">
+                                <span class="time-current">00:00</span>
+                                <span class="time-total">00:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://tiktok.com/@doutrinsbs" target="_blank" class="social-button tiktok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://instagram.com/@doutrinsbs" target="_blank" class="social-button instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com/@dddoutrins" target="_blank" class="social-button youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://kick.com/dddoutrins" target="_blank" class="social-button kick"><i class="fa-brands fa-kickstarter-k"></i></a>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
