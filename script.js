@@ -61,19 +61,6 @@ function updateTimers() {
     }
 }
 
-async function updateViewCount() {
-    const viewCountElement = document.getElementById('view-count-text');
-    try {
-        const response = await fetch('/api/views');
-        if (!response.ok) return;
-        const data = await response.json();
-        if (data.count) {
-            viewCountElement.textContent = data.count.toLocaleString('pt-BR');
-        }
-    } catch (error) {
-        console.error('Erro ao buscar visualizações:', error);
-    }
-}
 
 function updateDiscordStatus() {
     fetch(API_URL)
@@ -158,7 +145,6 @@ function updateActivityCard(cardElement, activity) {
 }
 
 // Inicia as buscas e os timers
-updateViewCount();
 updateDiscordStatus();
 setInterval(updateDiscordStatus, 10000);
 setInterval(updateTimers, 1000);

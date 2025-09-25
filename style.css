@@ -15,16 +15,6 @@ body {
     padding: 0 20px;
     box-sizing: border-box;
 }
-.view-counter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    color: #a0a0a0;
-    margin-bottom: 20px;
-    font-size: 0.9em;
-    font-family: monospace;
-}
 .discord-section {
     background-color: #1a1a1a;
     border-radius: 10px;
