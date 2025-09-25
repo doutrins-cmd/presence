@@ -243,3 +243,40 @@ body {
 .social-button:hover {
     background-color: #4b4f57;
 }
+
+@media (max-width: 640px) {
+    .discord-user-info-container {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        gap: 15px;              /* Adiciona um espaço entre os itens empilhados */
+        text-align: center;     /* Centraliza todo o texto */
+    }
+
+    .discord-info {
+        align-items: center; /* Centraliza o conteúdo dentro da div de info */
+        margin-left: 0;      /* Remove a margem que só era necessária na versão de PC */
+    }
+    
+    .user-info {
+        justify-content: center; /* Garante que nome e emblemas fiquem centralizados */
+    }
+
+    .github-link {
+        justify-content: center; /* Centraliza o link do github */
+    }
+
+    .add-discord-btn {
+        width: 100%; /* Faz o botão ocupar a largura toda, dando um visual melhor */
+        box-sizing: border-box; /* Garante que o padding não quebre o layout */
+    }
+
+    .container {
+        padding: 0 15px; /* Reduz um pouco o espaçamento nas laterais do site */
+    }
+
+    /* Ajuste no tamanho do texto da Rich Presence para telas pequenas */
+    .activity-name,
+    .activity-details-line1,
+    .activity-details-line2 {
+        font-size: 0.85em;
+    }
+}
